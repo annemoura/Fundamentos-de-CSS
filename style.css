@@ -13,46 +13,21 @@ body {
   background: linear-gradient(135deg, #f4f7fb, #e9f0ff);
   color: #1f2937;
   line-height: 1.6;
-  padding: 30px 20px;
+  min-height: 100vh;
 }
 
-.navbar {
-  max-width: 1000px;
-  margin: 0 auto 20px;
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 16px 24px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+header {
+  padding: 70px 20px 50px;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #1d4ed8;
-  font-weight: bold;
-  transition: 0.2s ease;
-}
-
-.navbar a:hover {
-  color: #0f3ea8;
-  text-decoration: underline;
-}
-
-.container {
+.hero {
   max-width: 1000px;
   margin: 0 auto;
   background: #ffffff;
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.hero {
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .tag {
@@ -69,53 +44,91 @@ body {
 .hero h1 {
   font-size: 3rem;
   color: #111827;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-.descricao {
+.hero p {
   font-size: 1.1rem;
   color: #4b5563;
-  max-width: 700px;
-  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
-.conteudos {
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.btn-secundario {
+  background: #111827;
+}
+
+.btn-secundario:hover {
+  background: #000000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.bloco {
   margin-bottom: 50px;
 }
 
-.conteudos h2,
+.bloco h2,
 .sobre h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
   color: #111827;
+  margin-bottom: 20px;
 }
 
-.grid-cards {
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 20px;
 }
 
 .card {
-  background: #f9fafb;
+  display: block;
+  background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   padding: 22px;
   text-decoration: none;
-  color: inherit;
+  color: #1f2937;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(29, 78, 216, 0.12);
   border-color: #93c5fd;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.12);
 }
 
 .card h3 {
   color: #1d4ed8;
+  font-size: 1.15rem;
   margin-bottom: 10px;
-  font-size: 1.2rem;
 }
 
 .card p {
@@ -124,71 +137,48 @@ body {
 }
 
 .sobre {
-  background: #f8fbff;
+  background: #ffffff;
   border-left: 6px solid #2563eb;
-  padding: 25px;
   border-radius: 14px;
-  margin-bottom: 50px;
+  padding: 25px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
 }
 
 .sobre p {
-  margin-bottom: 15px;
+  color: #374151;
 }
 
-.sobre h3 {
-  margin-bottom: 10px;
-  color: #1f2937;
-}
-
-.sobre ul {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.botao {
-  display: inline-block;
-  background: #2563eb;
-  color: white;
-  text-decoration: none;
-  padding: 12px 22px;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: background 0.25s ease, transform 0.25s ease;
-}
-
-.botao:hover {
-  background: #1d4ed8;
-  transform: scale(1.03);
-}
-
-.rodape {
+footer {
   text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #e5e7eb;
+  padding: 24px 20px 40px;
   color: #6b7280;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 20px 14px;
+  header {
+    padding: 30px 14px 20px;
   }
 
-  .container {
-    padding: 25px;
+  .hero {
+    padding: 28px 20px;
   }
 
   .hero h1 {
     font-size: 2.2rem;
   }
 
-  .conteudos h2,
-  .sobre h2 {
-    font-size: 1.5rem;
+  .hero p {
+    font-size: 1rem;
   }
 
-  .navbar {
-    gap: 16px;
-    padding: 14px;
+  .container {
+    padding: 0 14px 30px;
+  }
+
+  .bloco h2,
+  .sobre h2 {
+    font-size: 1.5rem;
   }
 }
