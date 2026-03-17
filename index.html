@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +28,16 @@
       color: #94a3b8;
     }
 
+    header a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
     .container {
       max-width: 900px;
       margin: auto;
@@ -39,6 +48,8 @@
       margin-top: 40px;
       margin-bottom: 20px;
       color: #38bdf8;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
     }
 
     .cards {
@@ -53,12 +64,14 @@
       border-radius: 12px;
       text-decoration: none;
       color: white;
-      transition: 0.2s;
+      transition: all 0.25s ease;
+      box-shadow: 0 0 0 transparent;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px) scale(1.02);
       background: #334155;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
     footer {
@@ -75,10 +88,10 @@
   <header>
     <h1>Anne Moura</h1>
     <p>Estudante de Ciência da Computação • Front-End em formação</p>
-    <div style="margin-top: 15px;">
-      <a href="https://github.com/annemoura" target="_blank" style="margin: 5px; color: #38bdf8;">GitHub</a>
-      <a href="https://www.linkedin.com/in/anne-moura-4a4567319" target="_blank"
-        style="margin: 5px; color: #38bdf8;">LinkedIn</a>
+
+    <div>
+      <a href="https://github.com/annemoura" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/anne-moura-4a4567319" target="_blank">LinkedIn</a>
     </div>
   </header>
 
@@ -108,5 +121,4 @@
   </footer>
 
 </body>
-
 </html>
