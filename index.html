@@ -1,150 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio CSS</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #f1f5f9;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(180deg, #0f172a, #020617);
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      color: #94a3b8;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      color: #38bdf8;
-      border-left: 4px solid #38bdf8;
-      padding-left: 10px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      text-decoration: none;
-      color: white;
-      transition: all 0.25s ease;
-      box-shadow: 0 0 0 transparent;
-    }
-
-    .card:hover {
-      transform: translateY(-8px) scale(1.02);
-      background: #334155;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    }
-
-    .links {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
-      background: #38bdf8;
-      color: #0f172a;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.2s ease;
-    }
-
-    .btn:hover {
-      background: #0ea5e9;
-      transform: scale(1.08);
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #94a3b8;
-      font-size: 14px;
-    }
-  </style>
+  <title>Fundamentos de CSS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="navbar">
+    <a href="index.html">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="https://github.com/annemoura" target="_blank">GitHub</a>
+  </nav>
 
-  <header>
-    <h1>Anne Moura</h1>
-    <p>Estudante de Ciência da Computação • Front-End em formação</p>
+  <main class="container">
+    <header class="hero">
+      <span class="tag">Projeto de estudo</span>
+      <h1>Fundamentos de CSS</h1>
+      <p class="descricao">
+        Projeto desenvolvido por Anne Moura para praticar seletores, display,
+        cores, fontes e exercícios de estilização com CSS.
+      </p>
+    </header>
 
-    <div class="links">
-      <a href="https://github.com/annemoura" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
-      <a href="https://www.linkedin.com/in/anne-moura-4a4567319" target="_blank" rel="noopener noreferrer"
-        class="btn">LinkedIn</a>
-    </div>
-  </header>
+    <section class="conteudos">
+      <h2>🎨 Conteúdos</h2>
 
-  <div class="container">
+      <div class="grid-cards">
+        <a class="card" href="cores-fontes/index.html">
+          <h3>Cores e Fontes</h3>
+          <p>Estudos sobre tipografia, paleta de cores e aparência visual.</p>
+        </a>
 
-    <h2>📚 Estudos</h2>
-    <div class="cards">
-      <a class="card" href="cores-fontes/index.html" target="_blank" rel="noopener noreferrer">🎨 Cores e Fontes</a>
-      <a class="card" href="display/index.html" target="_blank" rel="noopener noreferrer">📦 Display</a>
-      <a class="card" href="seletores/index.html" target="_blank" rel="noopener noreferrer">🎯 Seletores</a>
-      <a class="card" href="https://annemoura.github.io/Fundamentos-html/" target="_blank" rel="noopener noreferrer">
-        🌐 Fundamentos de HTML
+        <a class="card" href="display/index.html">
+          <h3>Display</h3>
+          <p>Prática com block, inline, inline-block e organização de layout.</p>
+        </a>
+
+        <a class="card" href="seletores/index.html">
+          <h3>Seletores</h3>
+          <p>Exemplos de classes, ids, elementos e combinações de seletores.</p>
+        </a>
+
+        <a class="card" href="cores-fontes/index.html">
+          <h3>Estilização Visual</h3>
+          <p>Aplicação de propriedades visuais para melhorar a interface.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="conteudos">
+      <h2>💻 Exercicos</h2>
+
+      <div class="grid-cards">
+        <a class="card" href="exercico-css/exercico-1/index.html" target="_blank">
+          <h3>Exercico 1</h3>
+          <p>Primeira prática com propriedades CSS.</p>
+        </a>
+
+        <a class="card" href="exercico-css/exercico-2/index.html" target="_blank">
+          <h3>Exercico 2</h3>
+          <p>Treino de estilização e organização visual.</p>
+        </a>
+
+        <a class="card" href="exercico-css/exercico-3/index.html" target="_blank">
+          <h3>Exercico 3</h3>
+          <p>Aplicação prática dos conceitos estudados.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre o projeto</h2>
+      <p>
+        Este projeto foi criado para organizar meus estudos de CSS e praticar
+        conceitos fundamentais de estilização de páginas web.
+      </p>
+
+      <h3>Tecnologias usadas</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+      </ul>
+
+      <a href="https://github.com/annemoura" target="_blank" class="botao">
+        Ver perfil no GitHub
       </a>
+    </section>
 
-    </div>
-
-    <h2>💻 Exercícios</h2>
-    <div class="cards">
-      <a class="card" href="exercico-css/exercicio-1/index.html" target="_blank" rel="noopener noreferrer">Exercício
-        1</a>
-      <a class="card" href="exercico-css/exercicio-2/index.html" target="_blank" rel="noopener noreferrer">Exercício
-        2</a>
-      <a class="card" href="exercico-css/exercicio-3/index.html" target="_blank" rel="noopener noreferrer">Exercício
-        3</a>
-      <a class="card" href="exercico-css/exercicio-4/index.html" target="_blank" rel="noopener noreferrer">Exercício
-        4</a>
-      <a class="card" href="exercico-css/exercicio-5/index.html" target="_blank" rel="noopener noreferrer">Exercício
-        5</a>
-      <a class="card" href="exercico-css/exercicio-6/index.html" target="_blank" rel="noopener noreferrer">Exercício
-        6</a>
-    </div>
-
-  </div>
-
-  <footer>
-    © 2026 • Projeto de estudos em CSS
-  </footer>
-
+    <footer class="rodape">
+      <p>Desenvolvido por Anne Moura 💙</p>
+    </footer>
+  </main>
 </body>
-
 </html>
