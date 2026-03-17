@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,16 +26,6 @@
 
     header p {
       color: #94a3b8;
-    }
-
-    header a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    header a:hover {
-      text-decoration: underline;
     }
 
     .container {
@@ -75,13 +64,6 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #94a3b8;
-      font-size: 14px;
-    }
-
     .links {
       margin-top: 20px;
       display: flex;
@@ -104,38 +86,52 @@
       background: #0ea5e9;
       transform: scale(1.08);
     }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
   </style>
 </head>
 
 <body>
 
- <header>
-  <h1>Anne Moura</h1>
-  <p>Estudante de Ciência da Computação • Front-End em formação</p>
+  <header>
+    <h1>Anne Moura</h1>
+    <p>Estudante de Ciência da Computação • Front-End em formação</p>
 
-  <div class="links">
-    <a href="https://github.com/annemoura" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
-    <a href="https://www.linkedin.com/in/anne-moura-4a4567319" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+    <div class="links">
+      <a href="https://github.com/annemoura" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/anne-moura-4a4567319" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <h2>📚 Estudos</h2>
+    <div class="cards">
+      <a class="card" href="cores-fontes/index.html" target="_blank" rel="noopener noreferrer">🎨 Cores e Fontes</a>
+      <a class="card" href="display/index.html" target="_blank" rel="noopener noreferrer">📦 Display</a>
+      <a class="card" href="seletores/index.html" target="_blank" rel="noopener noreferrer">🎯 Seletores</a>
+    </div>
+
+    <h2>💻 Exercícios</h2>
+    <div class="cards">
+      <a class="card" href="exercico-css/exercicio-1/index.html" target="_blank" rel="noopener noreferrer">Exercício 1</a>
+      <a class="card" href="exercico-css/exercicio-2/index.html" target="_blank" rel="noopener noreferrer">Exercício 2</a>
+      <a class="card" href="exercico-css/exercicio-3/index.html" target="_blank" rel="noopener noreferrer">Exercício 3</a>
+      <a class="card" href="exercico-css/exercicio-4/index.html" target="_blank" rel="noopener noreferrer">Exercício 4</a>
+      <a class="card" href="exercico-css/exercicio-5/index.html" target="_blank" rel="noopener noreferrer">Exercício 5</a>
+      <a class="card" href="exercico-css/exercicio-6/index.html" target="_blank" rel="noopener noreferrer">Exercício 6</a>
+    </div>
+
   </div>
-</header>
 
-<main class="container">
+  <footer>
+    © 2026 • Projeto de estudos em CSS
+  </footer>
 
-  <h2>📚 Estudos</h2>
-  <div class="grid">
-    <a href="cores-fontes/index.html" target="_blank" rel="noopener noreferrer" class="card">🎨 Cores e Fontes</a>
-    <a href="display/index.html" target="_blank" rel="noopener noreferrer" class="card">📦 Display</a>
-    <a href="seletores/index.html" target="_blank" rel="noopener noreferrer" class="card">🎯 Seletores</a>
-  </div>
-
-  <h2>💻 Exercícios</h2>
-  <div class="grid">
-    <a href="exercico-css/exercicio-1/index.html" target="_blank" rel="noopener noreferrer" class="card">Exercício 1</a>
-    <a href="exercico-css/exercicio-2/index.html" target="_blank" rel="noopener noreferrer" class="card">Exercício 2</a>
-    <a href="exercico-css/exercicio-3/index.html" target="_blank" rel="noopener noreferrer" class="card">Exercício 3</a>
-    <a href="exercico-css/exercicio-4/index.html" target="_blank" rel="noopener noreferrer" class="card">Exercício 4</a>
-    <a href="exercico-css/exercicio-5/index.html" target="_blank" rel="noopener noreferrer" class="card">Exercício 5</a>
-    <a href="exercico-css/exercicio-6/index.html" target="_blank" rel="noopener noreferrer" class="card">Exercício 6</a>
-  </div>
-
-</main>
+</body>
+</html>
