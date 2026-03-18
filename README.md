@@ -18,6 +18,11 @@ Este repositório contém meus estudos iniciais de CSS, incluindo:
 
 Praticar e consolidar fundamentos de CSS para desenvolvimento front-end.
 
+## 🔗Acesse o projeto
+
+
+https://annemoura.github.io/Fundamentos-de-CSS/
+
 ## 👩‍💻 Autora
 
 Anne Moura  
